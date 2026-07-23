@@ -1,0 +1,422 @@
+<title>Carbura — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #F7F5F1;
+    --surface: #EEEAE3;
+    --text: #1B1916;
+    --text-secondary: #7A6F63;
+    --accent: #C96A00;
+    --accent-subtle: #FDF0E0;
+    --divider: #DED9D1;
+    --header-bg: #1B1916;
+    --header-text: #F7F5F1;
+    --header-muted: #9A8F83;
+    --badge-bg: #C96A00;
+    --badge-text: #fff;
+    --link: #C96A00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1A1815;
+      --surface: #252220;
+      --text: #EDE8E1;
+      --text-secondary: #9A8F83;
+      --accent: #E08B20;
+      --accent-subtle: #2A2118;
+      --divider: #302C28;
+      --header-bg: #111009;
+      --header-text: #EDE8E1;
+      --header-muted: #7A6F63;
+      --badge-bg: #E08B20;
+      --badge-text: #111009;
+      --link: #E08B20;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #F7F5F1;
+    --surface: #EEEAE3;
+    --text: #1B1916;
+    --text-secondary: #7A6F63;
+    --accent: #C96A00;
+    --accent-subtle: #FDF0E0;
+    --divider: #DED9D1;
+    --header-bg: #1B1916;
+    --header-text: #F7F5F1;
+    --header-muted: #9A8F83;
+    --badge-bg: #C96A00;
+    --badge-text: #fff;
+    --link: #C96A00;
+  }
+  :root[data-theme="dark"] {
+    --bg: #1A1815;
+    --surface: #252220;
+    --text: #EDE8E1;
+    --text-secondary: #9A8F83;
+    --accent: #E08B20;
+    --accent-subtle: #2A2118;
+    --divider: #302C28;
+    --header-bg: #111009;
+    --header-text: #EDE8E1;
+    --header-muted: #7A6F63;
+    --badge-bg: #E08B20;
+    --badge-text: #111009;
+    --link: #E08B20;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  header {
+    background: var(--header-bg);
+    padding: 0 24px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .header-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    height: 52px;
+  }
+  .app-name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: var(--header-text);
+    letter-spacing: 0.02em;
+  }
+  .header-sep {
+    width: 1px;
+    height: 18px;
+    background: var(--header-muted);
+    opacity: 0.4;
+  }
+  .badge {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--badge-text);
+    background: var(--badge-bg);
+    padding: 3px 9px;
+    border-radius: 3px;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+
+  .doc-eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(28px, 5vw, 40px);
+    font-weight: normal;
+    line-height: 1.2;
+    text-wrap: balance;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+  .doc-meta {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+  }
+  .intro-block {
+    background: var(--accent-subtle);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 48px;
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.65;
+  }
+
+  .toc {
+    margin-bottom: 48px;
+  }
+  .toc-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+  }
+  .toc ol {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .toc a {
+    color: var(--link);
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .toc a:hover { text-decoration: underline; }
+
+  .section {
+    border-top: 1px solid var(--divider);
+    padding-top: 36px;
+    margin-bottom: 36px;
+  }
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    font-weight: normal;
+    color: var(--text);
+    margin-bottom: 16px;
+    text-wrap: balance;
+  }
+  p {
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 14px;
+    max-width: 65ch;
+  }
+  p:last-child { margin-bottom: 0; }
+
+  ul, ol {
+    padding-left: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  li {
+    font-size: 15px;
+    color: var(--text);
+    max-width: 65ch;
+  }
+
+  .data-table-wrap { overflow-x: auto; margin-bottom: 14px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    padding: 8px 12px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--divider);
+  }
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--divider);
+    vertical-align: top;
+    color: var(--text);
+  }
+  tr:last-child td { border-bottom: none; }
+
+  .contact-block {
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .contact-block .label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+  }
+  .contact-block a {
+    color: var(--link);
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .contact-block a:hover { text-decoration: underline; }
+
+  a { color: var(--link); }
+
+  @media (max-width: 480px) {
+    main { padding: 40px 18px 64px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+
+<header>
+  <div class="header-inner">
+    <span class="app-name">Carbura</span>
+    <div class="header-sep"></div>
+    <span class="badge">Privacy Policy</span>
+  </div>
+</header>
+
+<main>
+  <div class="doc-eyebrow">Legal</div>
+  <h1>Privacy Policy</h1>
+  <p class="doc-meta">Effective date: July 23, 2026 &nbsp;·&nbsp; Last updated: July 23, 2026</p>
+
+  <div class="intro-block">
+    Carbura is a mobile app that helps drivers find the cheapest fuel nearby. We collect the minimum data needed to deliver that service. We do not sell your personal information to any third party.
+  </div>
+
+  <nav class="toc" aria-label="Contents">
+    <div class="toc-label">Contents</div>
+    <ol>
+      <li><a href="#information-we-collect">Information We Collect</a></li>
+      <li><a href="#how-we-use-it">How We Use It</a></li>
+      <li><a href="#advertising">Advertising (Google AdMob)</a></li>
+      <li><a href="#third-party-services">Third-Party Data Sources</a></li>
+      <li><a href="#data-retention">Data Retention</a></li>
+      <li><a href="#childrens-privacy">Children's Privacy</a></li>
+      <li><a href="#your-rights">Your Rights</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <div class="section" id="information-we-collect">
+    <h2>1. Information We Collect</h2>
+    <div class="data-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Why we collect it</th>
+            <th>Stored?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Approximate location</strong> (coarse GPS or network)</td>
+            <td>To show fuel stations near you and sort results by distance</td>
+            <td>No — used in-session only, never sent to our servers</td>
+          </tr>
+          <tr>
+            <td><strong>Device locale / language</strong></td>
+            <td>To pre-select your country on first launch and display the correct language</td>
+            <td>No — read locally, never transmitted</td>
+          </tr>
+          <tr>
+            <td><strong>Selected country &amp; language preferences</strong></td>
+            <td>To remember your choice between app launches</td>
+            <td>Yes — stored locally on your device only (AsyncStorage)</td>
+          </tr>
+          <tr>
+            <td><strong>Recent city searches</strong></td>
+            <td>To show your search history for convenience</td>
+            <td>Yes — stored locally on your device only</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>We do not require account creation, do not collect your name, email, or phone number, and do not run any servers that store your personal data.</p>
+  </div>
+
+  <div class="section" id="how-we-use-it">
+    <h2>2. How We Use It</h2>
+    <p>The data listed above is used exclusively to:</p>
+    <ul>
+      <li>Show you fuel stations sorted by proximity to your current location</li>
+      <li>Display prices in the correct currency and language for your selected country</li>
+      <li>Remember your country and language preference across sessions</li>
+    </ul>
+    <p>We do not use your data for profiling, tracking, or any purpose beyond operating the app's core features.</p>
+  </div>
+
+  <div class="section" id="advertising">
+    <h2>3. Advertising — Google AdMob</h2>
+    <p>Carbura displays banner advertisements provided by <strong>Google AdMob</strong> (Google LLC). AdMob may collect and use the following to serve relevant ads:</p>
+    <ul>
+      <li>Advertising ID (Android Ad ID / IDFA)</li>
+      <li>Approximate location (if you have granted location permission)</li>
+      <li>Device information (model, OS version, screen size)</li>
+      <li>App usage signals (which screens you visit)</li>
+    </ul>
+    <p>This data is processed by Google under their own privacy policy. You can review it at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+    <p>To opt out of interest-based advertising on Android, go to <strong>Settings → Privacy → Ads → Opt out of Ads Personalization</strong>.</p>
+  </div>
+
+  <div class="section" id="third-party-services">
+    <h2>4. Third-Party Data Sources</h2>
+    <p>Carbura fetches fuel prices from official government APIs and community-reported sources depending on the country selected. No personal data is sent to these services — requests contain only a country identifier and, where required for geographic filtering, a bounding box or city name derived from your selection.</p>
+    <div class="data-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Source</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>France</td><td>prix-carburants.gouv.fr</td><td>Official government API</td></tr>
+          <tr><td>Germany</td><td>Markttransparenzstelle (MTS-K)</td><td>Official government API</td></tr>
+          <tr><td>Austria</td><td>spritpreisrechner.at</td><td>Official government API</td></tr>
+          <tr><td>Italy</td><td>Ministero dell'Ambiente</td><td>Official government API</td></tr>
+          <tr><td>Spain</td><td>Ministerio para la Transición Ecológica</td><td>Official government API</td></tr>
+          <tr><td>Finland</td><td>OpenStreetMap / community data</td><td>Community-reported</td></tr>
+          <tr><td>Sweden</td><td>OpenStreetMap / community data</td><td>Community-reported</td></tr>
+          <tr><td>Romania</td><td>OpenStreetMap / community data</td><td>Community-reported</td></tr>
+          <tr><td>United Kingdom</td><td>CMA fuel finder API</td><td>Official / retailer-reported</td></tr>
+          <tr><td>Poland</td><td>PaliwoMapa.pl (© 2026)</td><td>Community-reported</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section" id="data-retention">
+    <h2>5. Data Retention</h2>
+    <p>All data stored by Carbura lives locally on your device. You can delete it at any time by clearing the app's data in your device settings (<strong>Settings → Apps → Carbura → Storage → Clear Storage</strong>) or by uninstalling the app.</p>
+    <p>We have no server-side records of your preferences or searches to delete on your behalf.</p>
+  </div>
+
+  <div class="section" id="childrens-privacy">
+    <h2>6. Children's Privacy</h2>
+    <p>Carbura is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us and we will take steps to delete it.</p>
+  </div>
+
+  <div class="section" id="your-rights">
+    <h2>7. Your Rights</h2>
+    <p>Because we do not collect or store personal data on our servers, most data-subject rights (access, rectification, erasure) are exercisable directly on your device. If you have a question about data processed by Google AdMob, you can contact Google directly or use their <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">Data &amp; Privacy</a> dashboard.</p>
+    <p>If you are in the European Economic Area, you have rights under the GDPR. If you are in California, you have rights under the CCPA. To exercise any right, or if you have any concern, contact us at the address below.</p>
+  </div>
+
+  <div class="section" id="changes">
+    <h2>8. Changes to This Policy</h2>
+    <p>If we make material changes to this policy, we will update the "Last updated" date at the top of this page. We encourage you to review this page periodically. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>9. Contact</h2>
+    <p>For any privacy-related questions, requests, or concerns:</p>
+    <div class="contact-block">
+      <span class="label">Email</span>
+      <a href="mailto:ibrahim.arbi@adeona.com">ibrahim.arbi@adeona.com</a>
+    </div>
+  </div>
+</main>
