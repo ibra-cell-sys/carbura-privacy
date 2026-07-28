@@ -280,10 +280,10 @@
 <main>
   <div class="doc-eyebrow">Legal</div>
   <h1>Privacy Policy</h1>
-  <p class="doc-meta">Effective date: July 23, 2026 &nbsp;·&nbsp; Last updated: July 23, 2026</p>
+  <p class="doc-meta">Effective date: July 23, 2026 &nbsp;·&nbsp; Last updated: July 28, 2026</p>
 
   <div class="intro-block">
-    Carbura is a mobile app that helps drivers find the cheapest fuel nearby. We collect the minimum data needed to deliver that service. We do not sell your personal information to any third party.
+    Carbura is an independent mobile app that helps drivers compare fuel prices nearby. It is not affiliated with, endorsed by, or representing any government, ministry, regulator, or public authority. We collect the minimum data needed to deliver that service and do not sell your personal information to any third party.
   </div>
 
   <nav class="toc" aria-label="Contents">
@@ -365,30 +365,72 @@
 
   <div class="section" id="third-party-services">
     <h2>4. Third-Party Data Sources</h2>
-    <p>Carbura fetches fuel prices from official government APIs and community-reported sources depending on the country selected. No personal data is sent to these services — requests contain only a country identifier and, where required for geographic filtering, a bounding box or city name derived from your selection.</p>
+    <p>Carbura fetches fuel prices from official government open-data APIs and community-reported sources depending on the country selected. No personal data is sent to these services — requests contain only a country identifier and, where required for geographic filtering, a city name or bounding box derived from your selection.</p>
+    <p>Each country's source is also shown and linked inside the app on the About screen.</p>
     <div class="data-table-wrap">
       <table>
         <thead>
           <tr>
             <th>Country</th>
             <th>Source</th>
-            <th>Type</th>
+            <th>Notes</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>France</td><td>prix-carburants.gouv.fr</td><td>Official government API</td></tr>
-          <tr><td>Germany</td><td>Markttransparenzstelle (MTS-K)</td><td>Official government API</td></tr>
-          <tr><td>Austria</td><td>spritpreisrechner.at</td><td>Official government API</td></tr>
-          <tr><td>Italy</td><td>Ministero dell'Ambiente</td><td>Official government API</td></tr>
-          <tr><td>Spain</td><td>Ministerio para la Transición Ecológica</td><td>Official government API</td></tr>
-          <tr><td>Finland</td><td>OpenStreetMap / community data</td><td>Community-reported</td></tr>
-          <tr><td>Sweden</td><td>OpenStreetMap / community data</td><td>Community-reported</td></tr>
-          <tr><td>Romania</td><td>OpenStreetMap / community data</td><td>Community-reported</td></tr>
-          <tr><td>United Kingdom</td><td>CMA fuel finder API</td><td>Official / retailer-reported</td></tr>
-          <tr><td>Poland</td><td>PaliwoMapa.pl (© 2026)</td><td>Community-reported</td></tr>
+          <tr>
+            <td>France</td>
+            <td><a href="https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2" target="_blank" rel="noopener">data.economie.gouv.fr</a></td>
+            <td>Ministère de l'Économie open data, "Prix des carburants en France" (Licence Ouverte / Etalab)</td>
+          </tr>
+          <tr>
+            <td>Germany</td>
+            <td><a href="https://creativecommons.tankerkoenig.de" target="_blank" rel="noopener">creativecommons.tankerkoenig.de</a></td>
+            <td>Tankerkönig API (CC BY 4.0), which republishes data from the Markttransparenzstelle für Kraftstoffe (MTS-K)</td>
+          </tr>
+          <tr>
+            <td>Austria</td>
+            <td><a href="https://www.spritpreisrechner.at" target="_blank" rel="noopener">spritpreisrechner.at</a></td>
+            <td>E-Control Spritpreisrechner. Under Austrian price-transparency law, only the 5 cheapest stations may be shown per query</td>
+          </tr>
+          <tr>
+            <td>Italy</td>
+            <td><a href="https://www.mimit.gov.it/it/open-data" target="_blank" rel="noopener">mimit.gov.it</a></td>
+            <td>Ministero delle Imprese e del Made in Italy (MIMIT) open data, licence IODL 2.0</td>
+          </tr>
+          <tr>
+            <td>Spain</td>
+            <td><a href="https://geoportalgasolineras.es" target="_blank" rel="noopener">geoportalgasolineras.es</a></td>
+            <td>Ministerio para la Transición Ecológica, Geoportal de Gasolineras</td>
+          </tr>
+          <tr>
+            <td>United Kingdom</td>
+            <td><a href="https://fuelcosts.co.uk" target="_blank" rel="noopener">fuelcosts.co.uk</a></td>
+            <td>Republishes retailer prices open-sourced under the Motor Fuel Price (Open Data) Regulations 2025 (CMA Fuel Finder). Contains public sector information licensed under the Open Government Licence v3.0</td>
+          </tr>
+          <tr>
+            <td>Romania</td>
+            <td><a href="https://monitorulpreturilor.info" target="_blank" rel="noopener">monitorulpreturilor.info</a></td>
+            <td>Consiliul Concurenţei, via Monitorul Preţurilor</td>
+          </tr>
+          <tr>
+            <td>Sweden</td>
+            <td><a href="https://bensinpriser.nu" target="_blank" rel="noopener">bensinpriser.nu</a></td>
+            <td>bensinpriser.nu (Crownberry AB). Prices are reported by users and station owners</td>
+          </tr>
+          <tr>
+            <td>Finland</td>
+            <td><a href="https://www.polttoaine.net" target="_blank" rel="noopener">polttoaine.net</a></td>
+            <td>polttoaine.net (Webmoon Oy). Prices are reported by users</td>
+          </tr>
+          <tr>
+            <td>Poland</td>
+            <td><a href="https://paliwomapa.pl" target="_blank" rel="noopener">paliwomapa.pl</a></td>
+            <td>PaliwoMapa.pl. Prices are reported by drivers</td>
+          </tr>
         </tbody>
       </table>
     </div>
+    <p>Carbura does not collect, measure, or estimate prices itself. Every price shown is republished exactly as the source published it, with a timestamp. More countries may be added in future updates.</p>
   </div>
 
   <div class="section" id="data-retention">
